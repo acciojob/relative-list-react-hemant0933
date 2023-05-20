@@ -1,18 +1,13 @@
 import React from 'react';
 
 const RelativeList = () => {
-    const arr = [
-        'Hemant Jordan',
-        'Micheal Jordan',
-        'Mom',
-        'Dada',
-    ]
+    const relatives = ['John', 'Mary', 'David', 'Sarah'];
   return (
     <div>
-      <ol>
+      <ol key='relativeList'>
      {
-        arr.map((val,index)=>(
-            <li key={`relativeListItem${index}`}>{val}</li>
+        relatives.map((val,index)=>(
+            <li key={`relativeListItem${index+1}`}>{val}</li>
         ))
      }
       </ol>
