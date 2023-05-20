@@ -4,10 +4,10 @@ const RelativeList = () => {
     const relatives = ['John', 'Mary', 'David', 'Sarah'];
   return (
     <div>
-      <ol key='relativeList'>
+      <ol id='relativeList' key='relativeList'>
      {
         relatives.map((val,index)=>(
-            <li key={`relativeListItem${index+1}`}>{val}</li>
+            <li id={key} key={`relativeListItem${index+1}`}>{val}</li>
         ))
      }
       </ol>
